@@ -1,0 +1,125 @@
+[{
+  "_id": {
+    "$oid": "673940c0da32d70bbf7454f4"
+  },
+  "Participantes": [
+    {
+      "_id": "p1",
+      "nombre": "Lionel Messi",
+      "edad": 36,
+      "rol": "jugador",
+      "equipo": "Inter Miami",
+      "posicion": "Delantero",
+      "goles": 10,
+      "asistencias": 5
+    },
+    {
+      "_id": "p2",
+      "nombre": "Gerardo Martino",
+      "edad": 60,
+      "rol": "entrenador",
+      "equipo": "Inter Miami",
+      "experiencia": 20
+    },
+    {
+      "_id": "p3",
+      "nombre": "Carlos López",
+      "edad": 42,
+      "rol": "árbitro",
+      "experiencia": 15,
+      "licencia": "FIFA"
+    }
+  ],
+  "Equipos": [
+    {
+      "_id": "e1",
+      "nombre": "Inter Miami",
+      "ciudad": "Miami",
+      "entrenador": "p2",
+      "jugadores": [
+        "p1"
+      ],
+      "puntos": 15,
+      "goles_a_favor": 25,
+      "goles_en_contra": 18
+    },
+    {
+      "_id": "e2",
+      "nombre": "Los Angeles FC",
+      "ciudad": "Los Angeles",
+      "entrenador": "p4",
+      "jugadores": [
+        "p5"
+      ],
+      "puntos": 20,
+      "goles_a_favor": 30,
+      "goles_en_contra": 15
+    }
+  ],
+  "Encuentros": [
+    {
+      "_id": "m1",
+      "fecha": "2024-11-15",
+      "equipo_local": "e1",
+      "equipo_visitante": "e2",
+      "resultado": {
+        "goles_local": 2,
+        "goles_visitante": 1
+      },
+      "arbitro": "p3",
+      "estado": "finalizado"
+    }
+  ],
+  "Resultados": [
+    {
+      "_id": "r1",
+      "encuentro": "m1",
+      "goles": [
+        {
+          "jugador": "p1",
+          "minuto": 15
+        },
+        {
+          "jugador": "p1",
+          "minuto": 30
+        },
+        {
+          "jugador": "p6",
+          "minuto": 45
+        }
+      ],
+      "amonestaciones": [
+        {
+          "jugador": "p5",
+          "minuto": 60,
+          "tipo": "amarilla"
+        }
+      ],
+      "detalles": "Partido emocionante con dominio del equipo local."
+    }
+  ],
+  "TablaPosiciones": [
+    {
+      "equipo": "e1",
+      "puntos": 15,
+      "partidos_jugados": 10,
+      "victorias": 5,
+      "empates": 0,
+      "derrotas": 5,
+      "goles_a_favor": 25,
+      "goles_en_contra": 18,
+      "diferencia_goles": 7
+    },
+    {
+      "equipo": "e2",
+      "puntos": 20,
+      "partidos_jugados": 10,
+      "victorias": 6,
+      "empates": 2,
+      "derrotas": 2,
+      "goles_a_favor": 30,
+      "goles_en_contra": 15,
+      "diferencia_goles": 15
+    }
+  ]
+}]
